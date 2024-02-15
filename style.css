@@ -1,6 +1,16 @@
 body{
     background-color: #BAB2B5;
 }
+
+.font-Family{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{ 
+    text-decoration: none; 
+    color: rgb(247, 247, 247);
+} 
+
 .title{
     font-size: 50px;
     color: white;
@@ -11,18 +21,17 @@ body{
     margin-right: 100px;
     border: 2px solid black;
 }
+
 .center {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 37%;
     border-radius: 31px;
     box-shadow: 20px 20px 20px hsl(10, 10%, 44%);  
 }
-.textFont{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.linkFont{
+
+.headerFont{
     color: whitesmoke;
     background-color: hsl(10, 10%, 44%);
     text-align: center;
@@ -31,11 +40,37 @@ body{
     border: 2px solid black;   
 }
 
-.pageFont{
-    background-color: rgb(220, 220, 220);
+.linkFont{
+    color: whitesmoke;
+    background-color: hsl(10, 10%, 44%);
+    border: 1.6px solid black;   
+    font-size: 19px;
     text-align: center;
-    margin-left: 150px ;
-    margin-right: 150px;
-    border: 2px solid black;
+}
+
+.recipesContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.recipeLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.recipeLink:hover {
+    transform: scale(1.1);
+}
+
+.imageDesign{
+    height: 155px;
+    width: 200px;
+    border-radius: 31px;
+    box-shadow: 20px 20px 20px hsl(10, 10%, 44%);  
 }
 
